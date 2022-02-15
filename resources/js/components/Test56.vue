@@ -4,6 +4,6 @@
 
 <style>
 .test56 {
-  @apply text-red-500;
+  font-color: red;
 }
 </style>

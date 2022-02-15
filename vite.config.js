@@ -29,8 +29,8 @@ export default defineConfig(async ({ command, mode }) => {
       postcss: {
         plugins: [
           postcssImport,
-          tailwindNesting,
-          tailwindCss(tailwindCssConfig),
+          // tailwindNesting,
+          // tailwindCss(tailwindCssConfig),
           postcssColorFunction,
           autoprefixer,
         ],
@@ -51,9 +51,7 @@ export default defineConfig(async ({ command, mode }) => {
       brotliSize: false,
       outDir: 'public/build',
       rollupOptions: {
-        input: [
-          'resources/js/app.js',
-        ],
+        input: ['resources/js/app.js'],
         output: {
           // https://rollupjs.org/guide/en/#outputentryfilenames
           entryFileNames: '~[name].[hash].js',
